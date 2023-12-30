@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Entry Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin: 50px 0;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 600px) {
+            form {
+                max-width: 300px;
+            }
+        }
+
+        /* Navigation styles */
+        .navbar {
+            background-color: #333;
+            padding: 20px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-logo {
+            margin-right: 10px;
+        }
+
+        .navbar-logo img {
+            height: 30px;
+        }
+
+        .navbar-links {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        .navbar-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .navbar-links a:hover {
+            color: #007bff;
+        }
+
+        /* Footer styles */
+        .footer {
+            background-color: #333;
+            padding: 20px;
+            font-size: 14px;
+            color: #fff;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer-nav {
+            margin-top: 10px;
+        }
+
+        .footer-nav a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-nav a:hover {
+            color: #007bff;
+        }
+
+        .footer-nav a i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="navbar-links">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="entry.html"><i class="fas fa-envelope"></i> Entry From</a>
+            <a href="report/index.html"><i class="fas fa-map-marker-alt"></i> Report</a>
+        </div>
+    </div>
+
+    <h1>Customer Entry Form</h1>
+    <h4 style="text-align: center;">Register New Customer Here</h4>
+    <form action="customerRegistration.php" method="POST"> <!-- Specify the PHP file for form submission -->
+        <label for="customerName">Customer Name:</label>
+        <input type="text" id="customerName" name="customerName" required>
+
+        <label for="village">Village:</label>
+        <input type="text" id="village" name="village" required>
+
+        <label for="mobileNumber">Mobile Number:</label>
+        <input type="tel" id="mobileNumber" name="mobileNumber" required>
+
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email">
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <div class="footer">
+        <div class="footer-nav">
+            <a href="#"><i class="fas fa-home"></i> Home</a>
+            <a href="#"><i class="fas fa-envelope"></i> Contact</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Address</a>
+        </div>
+        <div class="footer-content">
+            <p>Contact: mahesh@example.com</p>
+            <p>Address: 1234 Street, City, Country</p>
+            <p>&copy; 2023 Developed By Mahesh ❤. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

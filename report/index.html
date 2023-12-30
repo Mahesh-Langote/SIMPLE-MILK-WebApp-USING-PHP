@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .section h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .section ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .section li {
+            margin-bottom: 10px;
+        }
+
+        .section a {
+            display: block;
+            padding: 10px;
+            background-color: #f9f9f9;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .section a:hover {
+            background-color: #e5e5e5;
+        }
+
+        /* Navigation styles */
+        .navbar {
+            background-color: #333;
+            padding: 20px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-logo {
+            margin-right: 10px;
+        }
+
+        .navbar-logo img {
+            height: 30px;
+        }
+
+        .navbar-links {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        .navbar-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .navbar-links a:hover {
+            color: #007bff;
+        }
+
+        /* Footer styles */
+        .footer {
+            background-color: #333;
+            padding: 20px;
+            font-size: 14px;
+            color: #fff;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer-nav {
+            margin-top: 10px;
+        }
+
+        .footer-nav a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-nav a:hover {
+            color: #007bff;
+        }
+
+        .footer-nav a i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <img src="../logo.png" alt="Logo">
+        </div>
+        <div class="navbar-links">
+            <a href="../index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="../entry.html"><i class="fas fa-envelope"></i> Entry From</a>
+            <a href="index.html"><i class="fas fa-map-marker-alt"></i> Report</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Menu</h1>
+
+        <div class="section">
+            <h2>Sell</h2>
+            <ul>
+                <li><a href="totalSell.php">All Sale Record</a></li>
+                <li><a href="product_sell_reports.php">Sell Product Wise</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Credit</h2>
+            <ul>
+             
+                <li><a href="pendingCreditCutomerWise.php">Pending Credit Customer Wise</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Stock</h2>
+            <ul>
+                <li><a href="buyRecord.php">All Record of Buy</a></li>
+                <li><a href="searchCustomer.php">Stock Details Product Wise</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Profit Calculation</h2>
+            <ul>
+                <li><a href="profitCalculation.php">Profit</a></li>
+                <li><a href="editProductBuy.php">Edit Product Buy</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-nav">
+            <a href="#"><i class="fas fa-home"></i> Home</a>
+            <a href="#"><i class="fas fa-envelope"></i> Contact</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Address</a>
+        </div>
+        <div class="footer-content">
+            <p>Contact: mahesh@example.com</p>
+            <p>Address: 1234 Street, City, Country</p>
+            <p>&copy; 2023 Developed By Mahesh ❤. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
